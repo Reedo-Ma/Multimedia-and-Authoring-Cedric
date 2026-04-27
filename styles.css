@@ -1,0 +1,173 @@
+:root {
+  --bg: #fff8f8;
+  --paper: #fffdfd;
+  --text: #342a2a;
+  --muted: #7b5d5d;
+  --accent: #d95c5c;
+  --accent-soft: #f4c7c7;
+  --line: #eed8d8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(to bottom, #fff5f5, #fffafa);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover,
+a:focus {
+  color: #b34b4b;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.header-inner {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 1.2rem 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.main-nav {
+  margin-top: 1rem;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  border: 1px solid var(--accent-soft);
+  padding: 0.35rem 0.6rem;
+  background: #fff;
+}
+
+.main-nav a[aria-current="page"] {
+  background: var(--accent-soft);
+  color: #5a2f2f;
+  border-color: #e8aaaa;
+}
+
+main {
+  width: min(1000px, 92%);
+  margin: 2rem auto 3rem;
+}
+
+.hero {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 1.2rem;
+}
+
+.section-title {
+  margin-top: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.card {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 0.9rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.week {
+  background: #fff;
+  border-left: 4px solid #e89a9a;
+  border-top: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0.85rem;
+}
+
+.week h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.02rem;
+}
+
+.placeholder-system {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.placeholder-system li {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 0.4rem 0.55rem;
+  min-width: 100px;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  padding: 1.1rem 0;
+  background: var(--paper);
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}
