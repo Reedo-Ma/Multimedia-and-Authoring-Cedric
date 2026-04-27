@@ -1,0 +1,47 @@
+/* Editorial light-red overrides — load after assets/css/main.css */
+body {
+	background-color: #fff8f8 !important;
+}
+
+#main > .inner {
+	background-color: rgba(255, 252, 252, 0.96);
+}
+
+#sidebar {
+	background-color: #fcefef !important;
+}
+
+#sidebar > .inner > .alt {
+	background-color: #f5e4e4 !important;
+}
+
+a {
+	color: #d94848 !important;
+	border-bottom-color: rgba(217, 72, 72, 0.35) !important;
+}
+
+a:hover {
+	color: #b83636 !important;
+	border-bottom-color: #b83636 !important;
+}
+
+.button {
+	background-color: #e87474 !important;
+	color: #ffffff !important;
+	border-bottom-color: transparent !important;
+}
+
+.button:hover {
+	background-color: #d94848 !important;
+	color: #ffffff !important;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+	border-bottom: none !important;
+}
+
+#header .logo strong {
+	color: #c94444;
+}
